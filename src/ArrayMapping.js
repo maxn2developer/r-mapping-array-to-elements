@@ -10,12 +10,15 @@ export default class ArrayMapping extends React.Component {
       monsters: [
         {
           name: 'Linda',
+          id: 11,
         },
         {
           name: 'Frank',
+          id: 12,
         },
         {
           name: 'Jacky',
+          id: 13,
         },
       ],
     };
@@ -27,9 +30,19 @@ export default class ArrayMapping extends React.Component {
         <h1>{this.state.monster2.name}</h1>
         <h1>{this.state.monster3.name}</h1> */}
         {this.state.monsters.map((monster) => {
-          return <h1> {monster.name}</h1>;
+          return <h1 key={monster.id}> {monster.name}</h1>;
         })}
+        console.log(moster.id);
       </div>
+      //   <div>
+      //   {/* <h1>{this.state.monster1.name}</h1>
+      //   <h1>{this.state.monster2.name}</h1>
+      //   <h1>{this.state.monster3.name}</h1> */}
+      //   {this.state.monsters.map((monster) => {
+      //    render extra div (node)
+      //     return <div><h1> {monster.name}</h1></div>;
+      //   })}
+      // </div>
     );
   }
 }
