@@ -32,7 +32,6 @@ export default class ArrayMapping extends React.Component {
         {this.state.monsters.map((monster) => {
           return <h1 key={monster.id}> {monster.name}</h1>;
         })}
-        console.log(moster.id);
       </div>
       //   <div>
       //   {/* <h1>{this.state.monster1.name}</h1>

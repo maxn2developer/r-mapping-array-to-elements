@@ -2,6 +2,7 @@ import React from 'react';
 
 import './style.css';
 import ArrayMapping from './ArrayMapping';
+import FinalStoringOriginalData from "./FinalStoringOriginalData"
 
 export default class App extends React.Component {
   constructor() {
@@ -29,6 +30,7 @@ export default class App extends React.Component {
         <h2>Start editing to see some magic happen!</h2>
         <h2 className="array-mapp">Array mapping</h2>
         <ArrayMapping />
+        <FinalStoringOriginalData/>
       </div>
     );
   }
